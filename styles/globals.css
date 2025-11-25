@@ -1,14 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@300;400;600;700&display=swap");
 
+/* Base Reset */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+/* Global Layout */
+html,
+body {
+    width: 100%;
+    height: 100%;
 }
 
 body {
     font-family: "Open Sans", "Lato", sans-serif;
-    margin: 0;
+    background: #0e0f11; /* глубокий тёмный фон */
+    color: #e5e7eb; /* светлый текст */
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
@@ -16,4 +31,63 @@ h4,
 h5,
 h6 {
     font-family: "Lato", sans-serif;
+    color: #f3f4f6; /* чуть ярче, чем основной текст */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Hierarchy Tweaks */
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.45rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #4ade80; /* современный зелёный акцент */
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #22c55e;
+}
+
+/* Generic Text Blocks */
+p {
+    margin-bottom: 1rem;
+    color: #cbd5e1;
+}
+
+/* Utility spacing */
+.section {
+    padding: 60px 20px;
+}
+
+/* Scrollbar (modern IT-style) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b1c1f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3f3f46;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #52525b;
 }

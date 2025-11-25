@@ -1,46 +1,84 @@
 .item {
-  margin: 1rem 0;
+    margin: 0; /* список у тебя уже управляет отступами */
+    background: #111215;
+    border-radius: 12px;
+    border: 1px solid #1f2125;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 26px rgba(0, 0, 0, 0.45);
+}
+
+/* Image block */
 .image {
-  width: 100%;
-  height: 20rem;
-  overflow: hidden;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
+    width: 100%;
+    height: 18rem;
+    overflow: hidden;
 }
 
 .image img {
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
 }
 
+.item:hover .image img {
+    transform: scale(1.05);
+}
+
+/* Content */
 .content {
-  text-align: center;
-  padding: 1rem;
+    text-align: center;
+    padding: 1.2rem;
 }
 
 .content h3 {
-  font-size: 1.25rem;
-  color: #2c292b;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #f3f4f6; /* заголовки светлее */
+    margin-bottom: 0.4rem;
 }
 
+.content address {
+    font-style: normal;
+    color: #9ca3af; /* мягкий серый */
+    font-size: 0.95rem;
+}
+
+/* Actions */
 .actions {
-  padding: 1.5rem;
-  text-align: center;
+    padding: 1.4rem;
+    text-align: center;
 }
 
 .actions button {
-  font: inherit;
-  cursor: pointer;
-  color: #77002e;
-  border: 1px solid #77002e;
-  background-color: transparent;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+    padding: 0.55rem 1.6rem;
+
+    background: transparent;
+    color: #4ade80; /* акцент зелёный */
+    border: 1px solid #4ade80;
+    border-radius: 6px;
+
+    font-weight: 600;
+    letter-spacing: 0.3px;
+
+    transition: background 0.25s ease, border-color 0.25s ease,
+        transform 0.15s ease, color 0.25s ease;
 }
 
-.actions button:hover,
+.actions button:hover {
+    background: #22c55e;
+    color: #0e0f11;
+    border-color: #22c55e;
+    transform: translateY(-2px);
+}
+
 .actions button:active {
-  background-color: #ffe2ed;
+    transform: translateY(0);
 }

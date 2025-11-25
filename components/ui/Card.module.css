@@ -1,5 +1,14 @@
 .card {
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background: #111215; /* глубокий тёмный фон */
+    border-radius: 12px; /* современный скруглённый угол */
+    padding: 1.2rem;
+    border: 1px solid #1f2125; /* лёгкий контур */
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.45); /* глубокая мягкая тень */
+    transition: transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+/* Hover state — лёгкий “elevation” эффект */
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.55);
 }

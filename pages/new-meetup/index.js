@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import NewMeetupForm from "../../components/meetups/NewMeetupForm";
-import { Head } from "next/document";
+import Head from "next/head";
 
 function NewMeetupPage() {
     const router = useRouter();
