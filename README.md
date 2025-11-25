@@ -1,4 +1,4 @@
-```markdown
+
 # React Meetups – Next.js Pages Router + MongoDB
 
 A full-stack meetup management application built on the **Next.js Pages Router**.  
@@ -113,4 +113,4 @@ The structure is consistent and maintainable.
 ---
 
 
-```
+
