@@ -23,9 +23,7 @@ function MetupDetails(props) {
 }
 
 export async function getStaticPaths() {
-    const client = await MongoClient.connect(
-        "mongodb+srv://serg:2729950Asdasd@figraco.yiqtech.mongodb.net/?appName=meetups"
-    );
+    const client = await MongoClient.connect("mongodb+srv:");
 
     const db = client.db();
 
@@ -36,7 +34,7 @@ export async function getStaticPaths() {
     client.close();
 
     return {
-        fallback: blocking,
+        fallback: false,
         paths: meetups.map((meettup) => ({
             params: { meetupId: meettup._id.toString() },
         })),
@@ -46,9 +44,7 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
     const meetupId = context.params.meetupId;
 
-    const client = await MongoClient.connect(
-        "mongodb+srv://serg:2729950Asdasd@figraco.yiqtech.mongodb.net/?appName=meetups"
-    );
+    const client = await MongoClient.connect("mongodb+srv:");
 
     const db = client.db();
 

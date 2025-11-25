@@ -54,9 +54,7 @@ function HomePage(props) {
 // }
 
 export async function getStaticProps() {
-    const client = await MongoClient.connect(
-        "mongodb+srv://serg:2729950Asdasd@figraco.yiqtech.mongodb.net/?appName=meetups"
-    );
+    const client = await MongoClient.connect("mongodb+srv:");
 
     const db = client.db();
 
