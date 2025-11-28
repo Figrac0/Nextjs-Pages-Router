@@ -107,7 +107,7 @@ UI is built from isolated, reusable components:
 - Layout wrappers  
 
 The structure is consistent and maintainable.
-
+ 
 ---
 
 
