@@ -3,7 +3,7 @@
 A production-ready full-stack meetup management application built on the **Next.js Pages Router**.  
 The project demonstrates classic Next.js architecture with server-side rendering, static generation, API routes, and a secure MongoDB Atlas integration.
 
-This repository is designed to showcase best practices used *before* the introduction of the App Router.
+This repository is designed to showcase best practices used *before* the introduction of the App Router. 
 
 ---
 
